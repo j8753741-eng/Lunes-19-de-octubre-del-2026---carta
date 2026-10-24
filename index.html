@@ -12,10 +12,23 @@ body:before{content:"🐾";position:fixed;right:8%;top:10%;font-size:90px;opacit
 .date{text-align:center;color:#d6b76a;letter-spacing:4px;font-size:12px}
 h1{text-align:center;font-size:clamp(27px,6vw,43px);font-weight:normal;line-height:1.2;color:#f5d998;margin:20px 0}
 .subtitle{text-align:center;color:#c8b99e;font-style:italic;margin-bottom:25px}
-.photo{border:1px dashed #b99a57;border-radius:17px;min-height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin:20px 0;background:#100e0b}
-.photo img{width:100%;max-height:420px;object-fit:contain;display:none}
-.photo label{padding:25px;text-align:center;color:#d8c28c;cursor:pointer}
-input{display:none}
+.photo {
+    border: 1px solid #b99a57;
+    border-radius: 17px;
+    overflow: hidden;
+    margin: 20px 0;
+    background: #100e0b;
+    padding: 7px;
+    box-shadow: 0 0 20px #c09a3b25;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 12px;
+}
 .letter{font-size:18px;line-height:1.9;text-align:left}
 .letter p{margin:18px 0}
 .gold{color:#f1d18a}
