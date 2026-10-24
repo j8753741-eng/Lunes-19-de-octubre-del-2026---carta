@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donde comienza otra semana de amarte 🖤</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#30251c,#090909 65%);color:#f8edda;font-family:Georgia,serif;min-height:100vh;padding:24px 14px;overflow-x:hidden}
+body:before{content:"🐾";position:fixed;right:8%;top:10%;font-size:90px;opacity:.07;transform:rotate(-25deg);pointer-events:none}
+.card{max-width:720px;margin:auto;border:1px solid #b99a57;border-radius:22px;padding:25px;background:linear-gradient(145deg,#15120f,#090909);box-shadow:0 0 35px #c09a3b18}
+.date{text-align:center;color:#d6b76a;letter-spacing:4px;font-size:12px}
+h1{text-align:center;font-size:clamp(27px,6vw,43px);font-weight:normal;line-height:1.2;color:#f5d998;margin:20px 0}
+.subtitle{text-align:center;color:#c8b99e;font-style:italic;margin-bottom:25px}
+.photo{border:1px dashed #b99a57;border-radius:17px;min-height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin:20px 0;background:#100e0b}
+.photo img{width:100%;max-height:420px;object-fit:contain;display:none}
+.photo label{padding:25px;text-align:center;color:#d8c28c;cursor:pointer}
+input{display:none}
+.letter{font-size:18px;line-height:1.9;text-align:left}
+.letter p{margin:18px 0}
+.gold{color:#f1d18a}
+.signature{text-align:center;margin-top:30px;color:#e7c779;font-style:italic}
+.paw{text-align:center;font-size:27px;margin-top:20px;letter-spacing:9px;opacity:.8}
+footer{text-align:center;font-size:12px;color:#98866a;margin-top:24px}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="date">LUNES · 19 DE OCTUBRE DE 2026</div>
+<h1>Donde comienza otra semana de amarte</h1>
+<div class="subtitle">Para la niña que hace especiales hasta mis días más sencillos 🐾</div>
+
+<div class="photo">
+    <img src="IMG_20261019_135838.png" alt="Nuestra fotografía">
+</div>
+
+<section class="letter">
+<p>Buenos días, mi amor. ❤️</p>
+
+<p>Comienza una nueva semana y hay algo que no cambia dentro de mí: las ganas de seguir queriéndote, de hacerte sonreír y de encontrar nuevas formas de recordarte lo importante que eres para mí.</p>
+
+<p>A veces pienso que los días son demasiado cortos para todo lo que quisiera compartir contigo. Me gustaría guardar cada conversación, cada mirada y cada instante en el que estar a tu lado hace que el mundo parezca un poquito más bonito.</p>
+
+<p>No necesito que hoy sea un día extraordinario para sentirme afortunado. Me basta con saber que existes, que puedo quererte y que todavía nos quedan tantos momentos por vivir, tantas risas por compartir y tantos recuerdos por construir.</p>
+
+<p>Espero que esta semana te regale motivos para sonreír, tranquilidad cuando estés cansada y fuerza cuando algo se te haga difícil. Y si en algún momento el día pesa demasiado, ojalá recuerdes que eres una persona maravillosa y que mereces recibir tanto cariño como el que das.</p>
+
+<p class="gold">Te amo por lo que eres, por lo que despiertas en mí y por todas esas pequeñas cosas tuyas que, sin darte cuenta, se han vuelto especiales para mi corazón.</p>
+
+<p>Que tengas un hermoso lunes, mi niña preciosa. Que esta semana empiece bonito y que, incluso en los días más comunes, nunca te falten razones para sentirte querida.</p>
+
+<div class="signature">Con todo mi amor, hoy y cada día. 🖤</div>
+<div class="paw">🐾 ♡ 🐾</div>
+</section>
+<footer>Un nuevo día, una nueva manera de elegirte.</footer>
+</main>
+<script>
+document.getElementById('foto').addEventListener('change',function(e){
+const file=e.target.files[0];if(!file)return;
+const img=document.getElementById('imagen');
+img.src=URL.createObjectURL(file);img.style.display='block';
+document.querySelector('.photo label').style.display='none';
+});
+</script>
+</body>
+</html>
